@@ -153,8 +153,8 @@ class CrazyflieROS:
 
     def _link_quality_updated(self, percentage):
         """Called when the link driver updates the link quality measurement"""
-        if percentage < 80:
-            rospy.logwarn("Connection quality is: %f" % (percentage))
+        ##if percentage < 80:
+            ##rospy.logwarn("Connection quality is: %f" % (percentage))
 
     def _log_error(self, logconf, msg):
         """Callback from the log API when an error occurs"""
